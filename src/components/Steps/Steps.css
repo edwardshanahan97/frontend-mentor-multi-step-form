@@ -1,0 +1,46 @@
+.steps {
+  background: url("../../assets/images/bg-sidebar-mobile.svg") no-repeat
+    center/cover;
+  height: 17.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  padding: 3.2rem 0;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.steps__number {
+  color: var(--color-white);
+  background: transparent;
+  border: 1px solid var(--color-white);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.3rem;
+  width: 3.3rem;
+}
+
+.steps__number span {
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.steps__number.active {
+  color: var(--color-blue-950);
+  background-color: var(--color-blue-200);
+  border-color: var(--color-blue-200);
+}
+
+.steps h2 {
+  display: none;
+}
+
+.steps p {
+  display: none;
+}

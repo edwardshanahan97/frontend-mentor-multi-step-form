@@ -1,7 +1,11 @@
+import Form from "./components/Form/Form";
+
 const App = () => {
   return (
     <main className="app">
-      <h1>Multi Step Form</h1>
+      <div className="container">
+        <Form />
+      </div>
     </main>
   );
 };
