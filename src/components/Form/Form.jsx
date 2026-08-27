@@ -10,7 +10,11 @@ const Form = () => {
     name: "",
     email: "",
     phone: "",
+    plan: "arcade",
+    billing: "monthly",
   });
+
+  console.log(formData);
 
   return (
     <section className="form">

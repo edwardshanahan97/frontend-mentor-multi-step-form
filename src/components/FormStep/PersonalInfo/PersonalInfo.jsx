@@ -20,18 +20,18 @@ const PersonalInfo = ({
     const email = event.target.email.value;
     const phone = event.target.phone.value;
 
-    const isNameValid = userName !== "";
-    const isEmailValid = event.target.email.validity.valid;
-    const isPhoneValid = event.target.phone.validity.valid;
+    // const isNameValid = userName !== "";
+    // const isEmailValid = event.target.email.validity.valid;
+    // const isPhoneValid = event.target.phone.validity.valid;
 
-    if (!isNameValid || !isEmailValid || !isPhoneValid) {
-      setError({
-        nameError: !isNameValid,
-        emailError: !isEmailValid,
-        phoneError: !isPhoneValid,
-      });
-      return;
-    }
+    // if (!isNameValid || !isEmailValid || !isPhoneValid) {
+    //   setError({
+    //     nameError: !isNameValid,
+    //     emailError: !isEmailValid,
+    //     phoneError: !isPhoneValid,
+    //   });
+    //   return;
+    // }
 
     setFormData((prev) => ({
       ...prev,

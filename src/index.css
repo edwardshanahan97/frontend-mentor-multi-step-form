@@ -43,9 +43,8 @@ body {
 
 .container {
   position: relative;
-  padding: 3.2rem 1.6rem 0 1.6rem;
-  min-height: 100vh;
   width: 100%;
+  min-height: 100vh;
 }
 
 /* Typography */
@@ -55,6 +54,13 @@ h1 {
   font-size: 2.4rem;
   line-height: 120%;
   margin-bottom: 0.8rem;
+}
+
+.heading-2 {
+  color: var(--color-blue-950);
+  font-size: 1.6rem;
+  line-height: 120%;
+  margin-bottom: 0.4rem;
 }
 
 .lead {

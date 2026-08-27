@@ -1,17 +1,19 @@
 import "./FormStep.css";
 import PersonalInfo from "./PersonalInfo/PersonalInfo";
+import Plan from "./Plan/Plan";
 
 const FormStep = ({ currentStep, setCurrentStep, formData, setFormData }) => {
+  const steps = [PersonalInfo, Plan];
+
+  const CurrentStep = steps[currentStep - 1];
+
   return (
     <div className="form-step">
-      {currentStep === 1 && (
-        <PersonalInfo
-          currentStep={currentStep}
-          setCurrentStep={setCurrentStep}
-          setFormData={setFormData}
-          formData={formData}
-        />
-      )}
+      <CurrentStep
+        setCurrentStep={setCurrentStep}
+        formData={formData}
+        setFormData={setFormData}
+      />
     </div>
   );
 };
