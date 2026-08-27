@@ -12,6 +12,7 @@ const Form = () => {
     phone: "",
     plan: "arcade",
     billing: "monthly",
+    addOns: [],
   });
 
   console.log(formData);

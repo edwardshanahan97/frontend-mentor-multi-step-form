@@ -1,36 +1,7 @@
 import "./Plan.css";
-import ArcadeIcon from "../../../assets/images/icon-arcade.svg";
-import AdvancedIcon from "../../../assets/images/icon-advanced.svg";
-import ProIcon from "../../../assets/images/icon-pro.svg";
+import { plans } from "../../../data/formOptions";
 
 const Plan = ({ formData, setFormData }) => {
-  const plans = [
-    {
-      id: 1,
-      name: "Arcade",
-      monthlyPrice: 9,
-      yearlyPrice: 90,
-      icon: ArcadeIcon,
-      value: "arcade",
-    },
-    {
-      id: 2,
-      name: "Advanced",
-      monthlyPrice: 12,
-      yearlyPrice: 120,
-      icon: AdvancedIcon,
-      value: "advanced",
-    },
-    {
-      id: 3,
-      name: "Pro",
-      monthlyPrice: 15,
-      yearlyPrice: 150,
-      icon: ProIcon,
-      value: "pro",
-    },
-  ];
-
   return (
     <div className="plan">
       <h1 className="heading-1">Select your plan</h1>
