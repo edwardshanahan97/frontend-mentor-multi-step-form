@@ -33,4 +33,10 @@
 }
 
 .personal-info__input.error {
+  border: 1px solid var(--color-red-500);
+}
+
+.personal-info__error {
+  color: var(--color-red-500);
+  font-size: 1rem;
 }

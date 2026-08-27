@@ -1,6 +1,6 @@
 import "./StepActions.css";
 
-const StepActions = ({ currentStep, setCurrentStep }) => {
+const StepActions = ({ currentStep, setCurrentStep, formData }) => {
   const handleDecrement = () => {
     if (currentStep === 1) {
       return;
@@ -10,10 +10,14 @@ const StepActions = ({ currentStep, setCurrentStep }) => {
   };
 
   const handleIncrement = () => {
-    if (currentStep === 4) {
+    // if (!formData.name || !formData.email || !formData.phone) {
+    //   return;
+    // }
+
+    if (currentStep === 4 || currentStep === 1) {
       return;
     } else {
-      setCurrentStep(currentStep + 1);
+      setCurrentStep((prev) => prev + 1);
     }
   };
 

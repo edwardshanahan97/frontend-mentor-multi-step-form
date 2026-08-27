@@ -6,14 +6,29 @@ import FormStep from "../FormStep/FormStep";
 
 const Form = () => {
   const [currentStep, setCurrentStep] = useState(1);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+  });
 
   return (
     <section className="form">
       <Steps currentStep={currentStep} />
 
-      <FormStep />
+      <FormStep
+        currentStep={currentStep}
+        setCurrentStep={setCurrentStep}
+        setFormData={setFormData}
+        formData={formData}
+      />
 
-      <StepActions currentStep={currentStep} setCurrentStep={setCurrentStep} />
+      <StepActions
+        currentStep={currentStep}
+        setCurrentStep={setCurrentStep}
+        setFormData={setCurrentStep}
+        formData={formData}
+      />
     </section>
   );
 };
