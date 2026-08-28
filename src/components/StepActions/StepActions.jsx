@@ -14,7 +14,7 @@ const StepActions = ({ currentStep, setCurrentStep, formData }) => {
     //   return;
     // }
 
-    if (currentStep === 4 || currentStep === 1) {
+    if (currentStep === 5 || currentStep === 1) {
       return;
     } else {
       setCurrentStep((prev) => prev + 1);
@@ -22,26 +22,30 @@ const StepActions = ({ currentStep, setCurrentStep, formData }) => {
   };
 
   return (
-    <div className="step-actions">
-      {currentStep !== 1 && (
-        <button onClick={handleDecrement} className="button__back">
-          Go Back
-        </button>
-      )}
+    currentStep !== 5 && (
+      <div className="step-actions">
+        {currentStep !== 1 && (
+          <button onClick={handleDecrement} className="button__back">
+            Go Back
+          </button>
+        )}
 
-      {currentStep === 4 ? (
-        <button className="button button__confirm">Confirm</button>
-      ) : (
-        <button
-          form="sign-up"
-          type="submit"
-          onClick={handleIncrement}
-          className="button button__next"
-        >
-          Next
-        </button>
-      )}
-    </div>
+        {currentStep === 4 ? (
+          <button onClick={handleIncrement} className="button button__confirm">
+            Confirm
+          </button>
+        ) : (
+          <button
+            form="sign-up"
+            type="submit"
+            onClick={handleIncrement}
+            className="button button__next"
+          >
+            Next
+          </button>
+        )}
+      </div>
+    )
   );
 };
 

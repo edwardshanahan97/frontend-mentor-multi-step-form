@@ -44,3 +44,8 @@
 .add-ons__content {
   flex: 1;
 }
+
+.add-on__price {
+  color: var(--color-purple-600);
+  font-size: 1.2rem;
+}

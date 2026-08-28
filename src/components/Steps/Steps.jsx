@@ -8,12 +8,13 @@ const stepData = [
 ];
 
 const Steps = ({ currentStep }) => {
+  const activeStep = currentStep === 5 ? 4 : currentStep;
   return (
     <div className="steps">
       {stepData.map((step) => (
         <div key={step.id} className={`steps__step `}>
           <div
-            className={`steps__number ${step.number === currentStep ? "active" : ""}`}
+            className={`steps__number ${step.number === activeStep ? "active" : ""}`}
           >
             <span>{step.number}</span>
           </div>

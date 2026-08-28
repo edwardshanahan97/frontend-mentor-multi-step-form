@@ -15,8 +15,6 @@ const Form = () => {
     addOns: [],
   });
 
-  console.log(formData);
-
   return (
     <section className="form">
       <Steps currentStep={currentStep} />
