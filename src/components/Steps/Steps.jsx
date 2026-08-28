@@ -1,11 +1,5 @@
 import "./Steps.css";
-
-const stepData = [
-  { id: 1, number: 1, text: "Your Info" },
-  { id: 2, number: 2, text: "Select Plan" },
-  { id: 3, number: 3, text: "Add-Ons" },
-  { id: 4, number: 4, text: "Summary" },
-];
+import { stepData } from "../../data/formOptions";
 
 const Steps = ({ currentStep }) => {
   const activeStep = currentStep === 5 ? 4 : currentStep;

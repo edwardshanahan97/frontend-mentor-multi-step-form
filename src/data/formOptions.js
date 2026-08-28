@@ -55,3 +55,10 @@ export const plans = [
     value: "pro",
   },
 ];
+
+export const stepData = [
+  { id: 1, number: 1, text: "Your Info" },
+  { id: 2, number: 2, text: "Select Plan" },
+  { id: 3, number: 3, text: "Add-Ons" },
+  { id: 4, number: 4, text: "Summary" },
+];
