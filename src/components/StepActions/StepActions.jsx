@@ -10,10 +10,6 @@ const StepActions = ({ currentStep, setCurrentStep, formData }) => {
   };
 
   const handleIncrement = () => {
-    // if (!formData.name || !formData.email || !formData.phone) {
-    //   return;
-    // }
-
     if (currentStep === 5 || currentStep === 1) {
       return;
     } else {
