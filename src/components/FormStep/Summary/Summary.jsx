@@ -34,9 +34,13 @@ const Summary = ({ formData, setCurrentStep }) => {
               {formData.plan} ({formData.billing})
             </h2>
 
-            <p onClick={() => setCurrentStep(2)} className="summary__change">
+            <button
+              aria-label="Change Plan"
+              onClick={() => setCurrentStep(2)}
+              className="summary__change"
+            >
               Change
-            </p>
+            </button>
           </div>
 
           <p className="summary__plan-price">

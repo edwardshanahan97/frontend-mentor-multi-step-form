@@ -1,6 +1,6 @@
 import "./StepActions.css";
 
-const StepActions = ({ currentStep, setCurrentStep, formData }) => {
+const StepActions = ({ currentStep, setCurrentStep }) => {
   const handleDecrement = () => {
     if (currentStep === 1) {
       return;

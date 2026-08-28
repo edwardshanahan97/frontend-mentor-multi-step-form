@@ -26,12 +26,7 @@ const Form = () => {
         formData={formData}
       />
 
-      <StepActions
-        currentStep={currentStep}
-        setCurrentStep={setCurrentStep}
-        setFormData={setCurrentStep}
-        formData={formData}
-      />
+      <StepActions currentStep={currentStep} setCurrentStep={setCurrentStep} />
     </section>
   );
 };

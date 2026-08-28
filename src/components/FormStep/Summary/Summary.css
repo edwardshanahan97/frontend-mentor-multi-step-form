@@ -1,10 +1,7 @@
-.summary {
-}
-
 .summary__content {
-  background-color: #f8f9ff;
+  background-color: var(--color-blue-50);
+  border-radius: 0.8rem;
   padding: 2.2rem 2.4rem;
-  border-radius: 0.8px;
 }
 
 .summary__plan {
@@ -26,7 +23,10 @@
 
 .summary__change {
   color: var(--color-grey-500);
+  background-color: transparent;
+  border: none;
   font-size: 1.4rem;
+  cursor: pointer;
 }
 
 .summary__change:hover {
