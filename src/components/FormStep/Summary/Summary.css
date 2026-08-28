@@ -85,3 +85,18 @@
   font-size: 1.6rem;
   font-weight: 700;
 }
+
+@media (min-width: 768px) {
+  .summary__plan h2 {
+    color: var(--color-blue-950);
+    margin-bottom: 0.8rem;
+  }
+
+  .summary__plan-price {
+    font-size: 1.6rem;
+  }
+
+  .summary__total-price {
+    font-size: 2rem;
+  }
+}

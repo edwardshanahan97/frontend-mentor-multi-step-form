@@ -19,6 +19,7 @@
   display: block;
   padding: 1rem 1.6rem;
   border: 1px solid var(--color-purple-200);
+  border-radius: 4px;
   width: 100%;
 }
 
@@ -39,4 +40,23 @@
 .personal-info__error {
   color: var(--color-red-500);
   font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .personal-info__group:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+
+  .personal-info__text {
+    font-size: 1.4rem;
+  }
+
+  .personal-info__input {
+    padding: 1.45rem 1.6rem;
+    border-radius: 8px;
+  }
+
+  .personal-info__input::placeholder {
+    font-size: 1.6rem;
+  }
 }

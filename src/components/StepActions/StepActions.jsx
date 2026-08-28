@@ -41,7 +41,7 @@ const StepActions = ({ currentStep, setCurrentStep, formData }) => {
             onClick={handleIncrement}
             className="button button__next"
           >
-            Next
+            Next Step
           </button>
         )}
       </div>

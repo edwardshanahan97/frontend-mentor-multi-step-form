@@ -43,3 +43,57 @@
 .steps p {
   display: none;
 }
+
+@media (min-width: 768px) {
+  .steps {
+    grid-column: 1;
+    grid-row: 1 / -1;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../assets/images/bg-sidebar-desktop.svg") no-repeat
+      center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 4rem 2.4rem;
+    gap: 3.2rem;
+    border-radius: 10px;
+  }
+
+  .steps__step {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  .steps__number {
+    flex-shrink: 0;
+  }
+
+  .steps__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .steps p {
+    display: block;
+    color: var(--color-blue-300);
+    font-size: 1.2rem;
+    line-height: 120%;
+    text-transform: uppercase;
+  }
+
+  .steps h2 {
+    display: block;
+    color: var(--color-white);
+    font-size: 1.4rem;
+    line-height: 120%;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+}

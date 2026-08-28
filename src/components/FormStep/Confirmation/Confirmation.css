@@ -11,3 +11,11 @@
   height: 5.6rem;
   margin-bottom: 2.4rem;
 }
+
+@media (min-width: 768px) {
+  .confirmation__img {
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 3.2rem;
+  }
+}
