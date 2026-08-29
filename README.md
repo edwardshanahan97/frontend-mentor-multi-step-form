@@ -71,6 +71,37 @@ return (
 
 This kept the step rendering logic simple and avoided having multiple conditional checks for each component.
 
+I also introduced automated testing using Vitest and React Testing Library. This helped me learn the basics of testing components from a user's perspective by rendering the form, simulating user interactions, and asserting the expected UI changes.
+
+```jsx
+test("render the personal info form", async () => {
+  const user = userEvent.setup();
+
+  render(<Form />);
+
+  const nameInput = screen.getByLabelText("Name");
+  const emailInput = screen.getByLabelText("Email");
+  const phoneNumber = screen.getByLabelText("Phone Number");
+  const button = screen.getByRole("button", { name: "Next Step" });
+
+  await user.type(nameInput, "Duck");
+
+  await user.type(emailInput, "duck@email.com");
+
+  await user.type(phoneNumber, "123456789");
+
+  expect(nameInput).toHaveValue("Duck");
+
+  expect(emailInput).toHaveValue("duck@email.com");
+
+  expect(phoneNumber).toHaveValue("123456789");
+
+  await user.click(button);
+
+  expect(screen.getByText(/select your plan/i)).toBeInTheDocument();
+});
+```
+
 ### Continued development
 
 I would like to continue improving the UI of this project to more closely match the Figma design across different screen sizes.

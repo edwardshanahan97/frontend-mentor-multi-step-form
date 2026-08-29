@@ -5,4 +5,8 @@ import { defineConfig } from "vite";
 export default defineConfig({
   plugins: [react()],
   base: "/frontend-mentor-multi-step-form/",
+
+  test: {
+    environment: "jsdom",
+  },
 });

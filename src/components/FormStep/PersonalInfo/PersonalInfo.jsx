@@ -16,13 +16,13 @@ const PersonalInfo = ({
   const handleForm = (event) => {
     event.preventDefault();
 
-    const userName = event.target.name.value.trim();
-    const email = event.target.email.value;
-    const phone = event.target.phone.value;
+    const userName = event.target.elements.name.value.trim();
+    const email = event.target.elements.email.value;
+    const phone = event.target.elements.phone.value;
 
     const isNameValid = userName !== "";
-    const isEmailValid = event.target.email.validity.valid;
-    const isPhoneValid = event.target.phone.validity.valid;
+    const isEmailValid = event.target.elements.email.validity.valid;
+    const isPhoneValid = event.target.elements.phone.validity.valid;
 
     if (!isNameValid || !isEmailValid || !isPhoneValid) {
       setError({
